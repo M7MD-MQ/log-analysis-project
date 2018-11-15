@@ -57,7 +57,6 @@ def errors_percentage():
 
   q_result = c.fetchall()
   result=""
-  total_p = 0
   for tim,err in q_result:
       time_re = str(tim)
       dt = datetime.datetime(int(time_re[:4]), int(time_re[5:7]), int(time_re[8:10]))
